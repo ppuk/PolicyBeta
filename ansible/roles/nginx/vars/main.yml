@@ -1,0 +1,6 @@
+---
+  nginx_delete_default_vhost: false
+  nginx_user: www-data
+  nginx_worker_processes: 4
+  nginx_pid: /var/run/nginx.pid
+  nginx_worker_connections: 768

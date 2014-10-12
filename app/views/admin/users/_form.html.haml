@@ -1,0 +1,8 @@
+= simple_form_for [:admin, user], html: { autocomplete: 'off' } do |f|
+  = f.input :username
+  = f.input :email
+  = f.input :password
+  = f.input :banned_until, as: :date_time_picker
+  = f.input :role, collection: User::VALID_ROLES
+  = f.button :submit, submit_text, class: 'btn btn-primary'
+

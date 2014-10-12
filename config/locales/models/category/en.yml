@@ -1,0 +1,15 @@
+en:
+  activerecord:
+    models:
+      category: Category
+
+    attributes:
+      category:
+        name: Name
+        colour: Colour
+        created_at: Created on
+        updated_at: Updated at
+
+    errors:
+      category:
+        cannot_delete_with_policies: "Please remove or reassign the associated policies before deleting this category."

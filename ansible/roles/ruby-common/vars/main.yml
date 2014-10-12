@@ -1,0 +1,20 @@
+---
+ruby_dependencies:
+  - libreadline-dev
+  - libssl-dev
+  - libyaml-dev
+  - zlib1g-dev
+  - graphicsmagick
+
+ruby_symlinks:
+  - bundle
+  - erb
+  - gem
+  - irb
+  - rake
+  - rdoc
+  - ri
+  - ruby
+  - testrb
+
+ruby_location: "/opt/{{ ruby_version }}"

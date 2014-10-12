@@ -1,0 +1,375 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:14:57 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"username":"username_486","email":"user_41@example.com","updated_at":"2014-10-01T16:14:57.348Z","created_at":"2014-10-01T16:14:57.348Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":26,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"1","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:14:57 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:14:57 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"title":"deploy magnetic convergence","description":"High life wolf jean shorts photo booth cliche biodiesel. Gluten-free Brooklyn synth dreamcatcher +1. Mixtape jean shorts biodiesel farm-to-table tofu Carles Williamsburg moon photo booth. Keffiyeh vegan locavore food truck Four Loko you probably haven't heard of them blog single-origin coffee squid.\nMoon whatever readymade stumptown gluten-free banh mi party trust fund Pitchfork. Sustainable ethical dreamcatcher whatever Brooklyn hoodie trust fund. Gluten-free etsy lo-fi brunch echo park fixie readymade. Stumptown banh mi artisan letterpress butcher single-origin coffee McSweeney's mlkshk. Sustainable mlkshk art PBR VHS mixtape.\nCardigan master cleanse trust fund vegan food truck raw denim. Art freegan mlkshk letterpress 8-bit craft beer vegan. Viral fanny pack messenger bag leggings keytar. Jean shorts Pitchfork thundercats locavore single-origin coffee. Cardigan beard keffiyeh irony Pitchfork Carles cliche freegan.","submitter_id":1,"state":"suggestion","category":"transport","cached_votes_score":0,"tags":["important","trivial","priority"],"updated_at":"2014-10-01T16:14:57.405Z","created_at":"2014-10-01T16:14:57.405Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '126'
+    body:
+      encoding: UTF-8
+      string: '{"took":10,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"1","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:14:57 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:14:57 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"priority"}
+        {"index":{"_id":2}}
+        {"name":"trivial"}
+        {"index":{"_id":3}}
+        {"name":"important"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '285'
+    body:
+      encoding: UTF-8
+      string: '{"took":14,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":1,"status":201}},{"index":{"_index":"test_tags","_type":"tag","_id":"2","_version":1,"status":201}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:14:57 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:14:57 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":2}}
+        {"title":"embrace revolutionary deliverables","description":"Brunch put a bird on it fanny pack DIY leggings Wayfarers. Ethical American Apparel Marfa sustainable Carles master cleanse organic tattooed +1. Synth hoodie letterpress before they sold out quinoa cliche cardigan ethical. Squid irony aesthetic banh mi organic before they sold out hoodie sustainable cardigan.\nMaster cleanse vice tumblr mustache keffiyeh irony keytar art. Wes anderson butcher high life freegan hoodie tofu echo park. Tattooed thundercats retro salvia freegan sartorial locavore chambray ethical. Marfa keffiyeh sartorial master cleanse biodiesel before they sold out butcher.\nNext level leggings photo booth yr ethical Pitchfork Portland Four Loko bicycle rights. Diy VHS whatever synth McSweeney's viral art raw denim twee. Readymade fixie biodiesel sustainable Banksy. Gentrify blog chambray McSweeney's raw denim Austin lo-fi. Cred McSweeney's master cleanse mustache wolf etsy tumblr irony retro.","submitter_id":1,"state":"vote","category":"transport","cached_votes_score":0,"tags":["discussion","important","priority"],"updated_at":"2014-10-01T16:14:57.513Z","created_at":"2014-10-01T16:14:57.513Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '125'
+    body:
+      encoding: UTF-8
+      string: '{"took":7,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"2","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:14:57 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:14:57 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"priority"}
+        {"index":{"_id":3}}
+        {"name":"important"}
+        {"index":{"_id":4}}
+        {"name":"discussion"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '286'
+    body:
+      encoding: UTF-8
+      string: '{"took":153,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":2,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":2,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"4","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:14:57 GMT
+- request:
+    method: get
+    uri: http://localhost:9200/test_policies/policy/_search
+    body:
+      encoding: UTF-8
+      string: '{"facets":{"category":{"terms":{"field":"category"}},"state":{"terms":{"field":"state"}}},"sort":[{"cached_votes_score":"desc"}]}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2927'
+    body:
+      encoding: UTF-8
+      string: '{"took":2,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":2,"max_score":null,"hits":[{"_index":"test_policies","_type":"policy","_id":"1","_score":null,
+        "_source" : {"title":"deploy magnetic convergence","description":"High life
+        wolf jean shorts photo booth cliche biodiesel. Gluten-free Brooklyn synth
+        dreamcatcher +1. Mixtape jean shorts biodiesel farm-to-table tofu Carles Williamsburg
+        moon photo booth. Keffiyeh vegan locavore food truck Four Loko you probably
+        haven''t heard of them blog single-origin coffee squid.\nMoon whatever readymade
+        stumptown gluten-free banh mi party trust fund Pitchfork. Sustainable ethical
+        dreamcatcher whatever Brooklyn hoodie trust fund. Gluten-free etsy lo-fi brunch
+        echo park fixie readymade. Stumptown banh mi artisan letterpress butcher single-origin
+        coffee McSweeney''s mlkshk. Sustainable mlkshk art PBR VHS mixtape.\nCardigan
+        master cleanse trust fund vegan food truck raw denim. Art freegan mlkshk letterpress
+        8-bit craft beer vegan. Viral fanny pack messenger bag leggings keytar. Jean
+        shorts Pitchfork thundercats locavore single-origin coffee. Cardigan beard
+        keffiyeh irony Pitchfork Carles cliche freegan.","submitter_id":1,"state":"suggestion","category":"transport","cached_votes_score":0,"tags":["important","trivial","priority"],"updated_at":"2014-10-01T16:14:57.405Z","created_at":"2014-10-01T16:14:57.405Z"},"sort":[0]},{"_index":"test_policies","_type":"policy","_id":"2","_score":null,
+        "_source" : {"title":"embrace revolutionary deliverables","description":"Brunch
+        put a bird on it fanny pack DIY leggings Wayfarers. Ethical American Apparel
+        Marfa sustainable Carles master cleanse organic tattooed +1. Synth hoodie
+        letterpress before they sold out quinoa cliche cardigan ethical. Squid irony
+        aesthetic banh mi organic before they sold out hoodie sustainable cardigan.\nMaster
+        cleanse vice tumblr mustache keffiyeh irony keytar art. Wes anderson butcher
+        high life freegan hoodie tofu echo park. Tattooed thundercats retro salvia
+        freegan sartorial locavore chambray ethical. Marfa keffiyeh sartorial master
+        cleanse biodiesel before they sold out butcher.\nNext level leggings photo
+        booth yr ethical Pitchfork Portland Four Loko bicycle rights. Diy VHS whatever
+        synth McSweeney''s viral art raw denim twee. Readymade fixie biodiesel sustainable
+        Banksy. Gentrify blog chambray McSweeney''s raw denim Austin lo-fi. Cred McSweeney''s
+        master cleanse mustache wolf etsy tumblr irony retro.","submitter_id":1,"state":"vote","category":"transport","cached_votes_score":0,"tags":["discussion","important","priority"],"updated_at":"2014-10-01T16:14:57.513Z","created_at":"2014-10-01T16:14:57.513Z"},"sort":[0]}]},"facets":{"category":{"_type":"terms","missing":0,"total":2,"other":0,"terms":[{"term":"transport","count":2}]},"state":{"_type":"terms","missing":0,"total":2,"other":0,"terms":[{"term":"vote","count":1},{"term":"suggestion","count":1}]}}}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:14:57 GMT
+- request:
+    method: get
+    uri: http://localhost:9200/test_policies/policy/_search
+    body:
+      encoding: UTF-8
+      string: '{"query":{"filtered":{"query":{"query_string":{"default_field":"title","query":"deploy
+        magnetic convergence","default_operator":"AND"}},"filter":{"bool":{"must":[{"term":{"submitter_id":1}}]}}}},"facets":{"category":{"terms":{"field":"category"}},"state":{"terms":{"field":"state"}}},"sort":[{"cached_votes_score":"desc"}]}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1621'
+    body:
+      encoding: UTF-8
+      string: '{"took":2,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":1,"max_score":null,"hits":[{"_index":"test_policies","_type":"policy","_id":"1","_score":null,
+        "_source" : {"title":"deploy magnetic convergence","description":"High life
+        wolf jean shorts photo booth cliche biodiesel. Gluten-free Brooklyn synth
+        dreamcatcher +1. Mixtape jean shorts biodiesel farm-to-table tofu Carles Williamsburg
+        moon photo booth. Keffiyeh vegan locavore food truck Four Loko you probably
+        haven''t heard of them blog single-origin coffee squid.\nMoon whatever readymade
+        stumptown gluten-free banh mi party trust fund Pitchfork. Sustainable ethical
+        dreamcatcher whatever Brooklyn hoodie trust fund. Gluten-free etsy lo-fi brunch
+        echo park fixie readymade. Stumptown banh mi artisan letterpress butcher single-origin
+        coffee McSweeney''s mlkshk. Sustainable mlkshk art PBR VHS mixtape.\nCardigan
+        master cleanse trust fund vegan food truck raw denim. Art freegan mlkshk letterpress
+        8-bit craft beer vegan. Viral fanny pack messenger bag leggings keytar. Jean
+        shorts Pitchfork thundercats locavore single-origin coffee. Cardigan beard
+        keffiyeh irony Pitchfork Carles cliche freegan.","submitter_id":1,"state":"suggestion","category":"transport","cached_votes_score":0,"tags":["important","trivial","priority"],"updated_at":"2014-10-01T16:14:57.405Z","created_at":"2014-10-01T16:14:57.405Z"},"sort":[0]}]},"facets":{"category":{"_type":"terms","missing":0,"total":1,"other":0,"terms":[{"term":"transport","count":1}]},"state":{"_type":"terms","missing":0,"total":1,"other":0,"terms":[{"term":"suggestion","count":1}]}}}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:14:58 GMT
+recorded_with: VCR 2.9.2

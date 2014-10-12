@@ -1,0 +1,19 @@
+en:
+  policy_mailer:
+    policy_accepted:
+      subject: Policy accepted
+
+    policy_declined:
+      subject: Policy rejected
+
+    promotion_request:
+      subject: Promotion requested
+
+    promotion_declined_by_admin:
+      subject: Promotion declined
+
+    promotion_declined_by_user:
+      subject: Promotion declined
+
+    promotion_accepted:
+      subject: Promotion granted

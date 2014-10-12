@@ -1,0 +1,13 @@
+.panel.panel-default
+  .panel-heading
+    %h4
+      = t('.promote')
+  %table.table
+    %tr
+      %td
+        %p
+          = t('.promote_instructions')
+        = link_to t('.request_promotion'),   |
+          request_promotion_policy_path,                               |
+          class: 'btn btn-info',                                       |
+          method: :put                                                 |

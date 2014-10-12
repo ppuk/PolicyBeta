@@ -1,0 +1,30 @@
+en:
+  admin:
+    categories:
+      index:
+        title: Categories
+        new_link: New
+
+      nav:
+        edit_link: Edit
+
+      category:
+        name: Name
+        created_at: Created at
+        show_link: Details
+        edit_link: Edit
+
+      show:
+        title: '%{title}'
+        delete: Delete category
+        hard_delete_instructions: Delete this category
+        delete_button: Fully delete this category
+        hard_delete_confirm: Are you sure you want to completely delete this category?
+
+      new:
+        title: New category
+        submit: Create category
+
+      edit:
+        title: Edit category
+        submit: Save changes

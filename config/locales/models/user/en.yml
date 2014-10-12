@@ -1,0 +1,30 @@
+en:
+  activerecord:
+    models:
+      user: User
+
+    attributes:
+      user:
+        email: Email
+        password: Password
+        email_confirmed_on: Email confirmed
+        created_at: Signed up
+        updated_at: Updated at
+        banned_until: Banned until
+        deleted_at: Deleted on
+        state: State
+
+    helpers:
+      user:
+        not_confirmed: Not confirmed
+        require_confirmed_email: You need to add and confirm your email address before you can do this
+
+        state:
+          deleted: Deleted
+          banned: Banned
+          active: Active
+
+        roles:
+          deleted: Deleted
+          admin: Admin
+          user: User

@@ -1,0 +1,14 @@
+---
+- name: Create a deploy user
+  sudo: yes
+  user: shell=/bin/bash name=deploy comment="Deploy User" group=app groups=sudo,app
+
+- name: Create an app user
+  sudo: yes
+  user: shell=/bin/bash name=app comment="App User" group=app
+
+- name: Add key for app user
+  authorized_key: user=app key="{{ lookup('file', '~/.ssh/pirate.pub') }}"
+
+- name: Add key for deploy user
+  authorized_key: user=deploy key="{{ lookup('file', '~/.ssh/pirate.pub') }}"

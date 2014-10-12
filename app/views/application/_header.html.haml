@@ -1,0 +1,20 @@
+.navbar.navbar-default.navbar-static-top{role:"navigation"}
+  .container
+    .navbar-header
+      = link_to t('site_title'), '/', class: "navbar-brand"
+
+    %ul.nav.navbar-nav.navbar-left.nav-pills
+      %li
+        = link_to t('header.policies'), policies_path
+
+    %ul.nav.navbar-nav.navbar-right.nav-pills
+      - if signed_in?
+        - if current_user.is_admin?
+          = render partial: "application/nav/admin"
+        = render partial: "application/nav/user"
+
+      - else
+        %li
+          = link_to t('header.sign_in'), sign_in_path
+        %li
+          = link_to t('header.sign_up'), sign_up_path

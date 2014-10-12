@@ -1,0 +1,10 @@
+%p
+  Hi, #{@to.username}
+
+%p
+  The policy "#{@policy.title}" has been declined for promotion to the next stage by the submitting user. This decision may be overruled bu an admin by visiting the following page and clicking the 'Force promote' button.
+
+%p
+  = link_to 'View policy', policy_url(@policy)
+
+

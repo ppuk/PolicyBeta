@@ -1,0 +1,43 @@
+en:
+  admin:
+    users:
+      confirm_email_link: Confirm email
+      unconfirm_email_link: Unconfirm email
+      impersonate_link: Impersonate
+      send_password_reset_link: Send password reset
+
+      user:
+        edit_link: Edit
+        show_link: Detail
+
+      nav:
+        actions_link: Actions
+        unconfirm_email_confirm: Are you sure you want to unconfirm this email?
+        confirm_email_confirm: Are you sure you want to confirm this email?
+        impersonate_confirm: This will log you out and log you in as this user. Are you sure you want to proceed?
+        send_password_reset_confirm: Are you sure you want to send this user a password reset email?
+
+      index:
+        title: Users
+        email: Email
+        created_at: Signed up
+        confirmed: Email confirmed
+        new_link: New user
+
+      show:
+        title: '%{name}'
+        delete: Delete account
+        hard_delete_instructions: Delete this account, removing all associated policies and comments
+        soft_delete_instructions: Remove this account's details (email, username, password) and keep all associated data.
+        delete_button: Fully delete this account
+        soft_delete_button: Anonymise this account
+        hard_delete_confirm: Are you sure you want to completely delete this account?
+        soft_delete_confirm: Are you sure you want to anonymise this account? The user will no longer be able to log in.
+
+      new:
+        title: New user
+        submit: 'Create user'
+
+      edit:
+        title: 'Edit user %{id}'
+        submit: 'Save changes'

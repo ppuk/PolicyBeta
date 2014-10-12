@@ -1,0 +1,24 @@
+.filterable_select {
+  div.current_selection {
+    line-height: 30px;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    border: 1px solid #eee;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20px;
+
+    li {
+      cursor: pointer;
+      display: block;
+      padding: 3px 7px;
+    }
+
+    li:hover {
+    background-color: #CCF1FF;
+    }
+  }
+}
+

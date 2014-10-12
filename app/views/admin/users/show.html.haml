@@ -1,0 +1,90 @@
+.row
+  .col-md-5
+    .panel{ class: "panel-#{user.display_state_class}" }
+      .panel-heading
+        - if !user.deleted?
+          = render partial: 'nav'
+        %h4
+          Details
+
+      %table.table
+        %tr
+          %td
+            = t('state', scope: 'activerecord.attributes.user')
+          %td{ class: "text-#{user.display_state_class}" }
+            = user.display_state
+
+        %tr
+          %td
+            = t('username', scope: 'activerecord.attributes.user')
+          %td
+            = user.username
+
+        %tr
+          %td
+            = t('email', scope: 'activerecord.attributes.user')
+          %td
+            = user.email
+
+        %tr
+          %td
+            = t('role', scope: 'activerecord.attributes.user')
+          %td
+            = user.display_role
+
+        %tr
+          %td
+            = t('email_confirmed_on', scope: 'activerecord.attributes.user')
+          %td
+            = user.email_confirmation_line
+
+        %tr
+          %td
+            = t('banned_until', scope: 'activerecord.attributes.user')
+          %td
+            = l(user.banned_until.localtime, format: :admin) if user.banned_until
+
+        %tr
+          %td
+            = t('deleted_at', scope: 'activerecord.attributes.user')
+          %td
+            = l(user.deleted_at.localtime, format: :admin) if user.deleted_at
+
+    .panel.panel-danger
+      .panel-heading
+        %h4
+          = t('delete')
+
+      %table.table
+        %tr
+          %td
+            %p
+              = t('.hard_delete_instructions')
+            = link_to t('.delete_button'), admin_user_path(user), method: :delete, class: 'btn btn-danger', data: { confirm: t('.hard_delete_confirm') }, id: 'confirm_destroy'
+
+        %tr
+          %td
+            %p
+              = t('.soft_delete_instructions')
+            = link_to t('.soft_delete_button'), soft_delete_admin_user_path(user), method: :delete, class: 'btn btn-danger', data: { confirm: t('.soft_delete_confirm') }, id: 'confirm_anonymise'
+
+    .panel.panel-default
+      .panel-heading
+        %h4 Recent IP Addresses
+
+      %table.table
+        - user.ip_logs.last(10).each do |ip_log|
+          %tr
+            %td
+              = ip_log.ip
+            %td
+              = l(ip_log.last_seen, format: :admin)
+
+  .col-md-7
+    .panel.panel-default
+      .panel-heading
+        %h4
+          Policies
+
+      %table.table
+        = render collection: @policies, partial: 'policy'

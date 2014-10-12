@@ -1,0 +1,19 @@
+en:
+  account:
+    profile:
+      nav:
+        edit: Edit profile
+
+      show:
+        title: My Profile
+        delete: Delete my account
+        hard_delete_instructions: Delete my account, removing all associated policies and comments
+        soft_delete_instructions: Remove my personal details from my profile (email, username, password) and keep all associated data.
+        delete_button: Fully delete my account
+        soft_delete_button: Anonymise my account
+        hard_delete_confirm: Are you sure you want to completely delete your account?
+        soft_delete_confirm: Are you sure you want to anonymise your account? You will no longer be able to log in.
+
+      edit:
+        title: Edit Profile
+        submit: Save changes

@@ -1,0 +1,20 @@
+.well.new-policy
+  %p
+    = t('.new-tout')
+  = link_to t('.new'), new_account_policy_path, class: 'btn btn-success'
+
+.well
+  = simple_form_for @search, as: :search, url: '', method: :get, data: { auto_submit: true } do |f|
+    - @search.filters.each do |filter|
+      = f.input filter, as: :hidden
+
+    .input-group
+      = f.input_field :query, class: 'form-control', required: false
+      %span.input-group-btn
+        = f.submit I18n.t('create', scope: 'simple_form.helpers.user_search'), class: 'btn btn-default'
+
+    = f.input :order_name, collection: @search.available_orders.keys.inject([]){ |data, key| data << [t(key, scope: 'activerecord.attributes.policy.order_name'), key] }, as: :select
+
+  = render partial: 'shared/policies/filters/selected_filters'
+  = render partial: 'shared/policies/filters/available_filters'
+

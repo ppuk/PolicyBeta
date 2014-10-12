@@ -1,0 +1,11 @@
+---
+  app_name: "policy_beta"
+  app_user: "app"
+  redis_namespace: "{{app_name}}-{{environment_name}}"
+  app_location: "/home/{{app_user}}/{{app_name}}_{{environment_name}}"
+  app_directory: "{{app_location}}/current"
+
+  db_name: "{{app_name}}_{{environment_name}}"
+  db_user: "db_{{environment_name}}"
+
+  mail_sent_from: 'noreply@example.com'

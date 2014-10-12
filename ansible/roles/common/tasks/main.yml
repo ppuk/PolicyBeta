@@ -1,0 +1,20 @@
+---
+- name: Upgrade apt packages
+  apt: upgrade=yes
+       update_cache=yes
+
+- name: Install prerequisite packages that are necessary to compile applications and gems with native extensions
+  apt: pkg={{ item }}
+  with_items:
+    - language-pack-en
+    - autoconf
+    - build-essential
+    - git
+    - libpq-dev
+
+- name: Install python-software-properties so the apt_repository module will work properly
+  apt: pkg=python-software-properties
+
+
+- name: Create a directory to deploy the app to
+  file: path={{app_location}} state=directory mode=0775 owner={{app_user}} group=app

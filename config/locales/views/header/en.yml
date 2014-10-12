@@ -1,0 +1,9 @@
+en:
+  header:
+    admin: Admin
+    dashboard: Dashboard
+    categories: Categories
+    users: Users
+    my_policies: My policies
+    profile: My profile
+    my_account: My account

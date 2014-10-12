@@ -1,0 +1,4 @@
+.flashes.container
+  - flash.each do |k, v|
+    .flash.alert{class: "alert-#{k}"}
+      = v

@@ -1,0 +1,56 @@
+en:
+  admin:
+    policies:
+      index:
+        title: Policies
+        title: Title
+        created_at: Created at
+        new_link: New
+
+      policy:
+        edit_link: Edit
+        show_link: Detail
+
+      promotion_tout:
+        request_promotion:
+          promote: Request Promotion
+          request_promotion: Request promotion
+          promote_instructions: Click the button below to request that the user promotes this policy to the next stage
+
+        waiting_on_user:
+          promote: Promotion Requested
+          waiting_on_user: Waiting for user to confirm promotion
+
+        confirm_promotion:
+          promote: Confirm Promotion
+          promote_instructions: Click the buttons below to confirm or reject promoting this policy to the next stage.
+          approve_promotion: Approve
+          decline_promotion: Reject
+
+      sidebar:
+        accept_or_decline: Complete Policy
+        accept_or_decline_instructions: Use the buttons below to accept or reject this policy.
+        confirm_accept: Are you sure you want to accept this policy? This will email the user and create a new policy derived from this one
+        confirm_decline: Are you sure you want to reject this policy? This will email the user and mark the policy as declined.
+        accept_button: Accept
+        decline_button: Reject
+
+        edit: Edit policy
+        edit_instructions: Edit this policy.
+        edit_button: Edit
+
+        delete: Delete policy
+        hard_delete_instructions: Delete this policy, removing all associated comments
+        delete_button: Fully delete this policy
+        hard_delete_confirm: Are you sure you want to completely delete this policy?
+
+      show:
+        title: '%{title}'
+
+      new:
+        title: New policy
+        submit: 'Create policy'
+
+      edit:
+        title: 'Edit policy'
+        submit: 'Save changes'

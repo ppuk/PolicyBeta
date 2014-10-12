@@ -1,0 +1,37 @@
+.row
+  .col-md-5
+    .panel.panel-default
+      .panel-heading
+        = render partial: 'nav'
+        %h4
+          = t('.title')
+
+      %table.table
+        %tr
+          %td
+            = t('username', scope: 'activerecord.attributes.user')
+          %td
+            = user.username
+        %tr
+          %td
+            = t('email', scope: 'activerecord.attributes.user')
+          %td
+            = user.email
+
+    .panel.panel-danger
+      .panel-heading
+        %h4
+          = t('delete')
+
+      %table.table
+        %tr
+          %td
+            %p
+              = t('.hard_delete_instructions')
+            = link_to t('.delete_button'), account_profile_path, method: :delete, class: 'btn btn-danger', data: { confirm: t('.hard_delete_confirm') }, id: 'confirm_destroy'
+
+        %tr
+          %td
+            %p
+              = t('.soft_delete_instructions')
+            = link_to t('.soft_delete_button'), soft_delete_account_profile_path, method: :delete, class: 'btn btn-danger', data: { confirm: t('.soft_delete_confirm') }, id: 'confirm_anonymise'

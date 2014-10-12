@@ -1,0 +1,6 @@
+---
+- name: Create env vars file
+  sudo: yes
+  template: src=env_vars.j2
+            dest=/etc/profile.d/app_env.sh
+            mode=0666

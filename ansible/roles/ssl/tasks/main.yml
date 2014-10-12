@@ -1,0 +1,21 @@
+- name: Create SSL cert directory
+  file: path=/etc/nginx/ssl
+        owner=root
+        group=root
+        state=directory
+
+- name: Copy over ssl certs
+  copy: src=null/ssl/certs/server.crt
+        dest=/etc/nginx/ssl/
+        owner=root
+        group=root
+        mode=0755
+  notify: Restart Nginx
+
+- name: Copy over ssl keys
+  copy: src=null/ssl/keys/server.key
+        dest=/etc/nginx/ssl/
+        owner=root
+        group=root
+        mode=0755
+  notify: Restart Nginx

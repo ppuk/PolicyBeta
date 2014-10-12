@@ -1,0 +1,14 @@
+en:
+  activerecord:
+    models:
+      evidence_item: Evidence
+
+    attributes:
+      evidence_item:
+        title: Title
+        description: Description
+        created_at: Created on
+        updated_at: Updated at
+
+        not_approved: Not Accepted
+        approved: Accepted

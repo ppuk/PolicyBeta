@@ -1,0 +1,8 @@
+%p
+  Hi, #{@to.username}
+
+%p
+  #{@from.username} has requested that we promote the policy "#{@policy.title}" to the next stage. Please click the link below to accept or decline this request:
+
+%p
+  = link_to 'View policy', policy_url(@policy)

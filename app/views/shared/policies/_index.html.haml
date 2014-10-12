@@ -1,0 +1,23 @@
+- if policies.any?
+  .row
+    .col-md-3
+      = render partial: 'shared/policies/sidebar'
+
+    .col-md-9
+      %ul.policies
+        = render collection: policies, partial: 'shared/policies/policy'
+
+      - if policies.total_pages > 1
+        .panel-footer
+          = paginate policies
+- else
+  .row
+    .col-md-3
+      = render partial: 'shared/policies/sidebar'
+
+    .col-md-9
+      .no-results
+        %h3
+          = t('.no_results.title')
+        %p
+          = t('.no_results.desc')

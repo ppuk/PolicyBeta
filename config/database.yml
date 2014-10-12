@@ -1,0 +1,20 @@
+common: &common
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+
+production: &env
+  <<: *common
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASS'] %>
+  database: <%= ENV['DB_NAME'] %>
+  host: <%= ENV['DB_HOST'] %>
+
+development:
+  <<: *common
+  database: policybeta_development
+
+test:
+  <<: *common
+  database: policybeta_test

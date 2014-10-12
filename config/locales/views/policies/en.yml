@@ -1,0 +1,19 @@
+en:
+  shared:
+    evidence_items:
+      list:
+        new_item: Add Evidence
+        title: Evidence
+
+    policies:
+      sidebar:
+        new-tout: Do you have an idea for a policy?
+        new: Submit a new policy
+
+      show:
+        sign_in_to_comment: Log in to comment
+
+      index:
+        no_results:
+          title: No Results
+          desc: No policies found.

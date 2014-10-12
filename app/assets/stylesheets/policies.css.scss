@@ -1,0 +1,62 @@
+// Place all the styles related to the policies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.vote-gutter {
+  position: fixed;
+}
+
+ul.tag-list {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.policies {
+  padding: 0;
+
+  .policy {
+    margin-bottom: 30px;
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+
+ul.filters {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+
+.btn {
+  &.suggestion {
+    color: #000;
+    background-color: #E993FF;
+  }
+
+  &.proposition {
+    color: #000;
+    background-color: #93FFF2;
+  }
+
+  &.vote {
+    color: #000;
+    background-color: #93D8FF;
+  }
+
+  &.passed {
+    color: #000;
+    background-color: #B1FF93;
+  }
+
+  &.rejected {
+    background-color: #FF4D4D;
+    color: #fff;
+  }
+}

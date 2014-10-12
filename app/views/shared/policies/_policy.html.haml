@@ -1,0 +1,21 @@
+.row.policy
+  .col-md-1
+    = vote_input(policy, current_user)
+
+  .col-md-11
+    %h3
+      = link_to policy.title, policy
+
+    .category
+      = policy.category.name_badge
+      = policy.state_badge
+
+    %p.description
+      = policy.shortened_description
+
+    .meta
+      .created_at
+        = policy.created_at
+
+      .submitter
+        = policy.submitter.logged_in_display_name

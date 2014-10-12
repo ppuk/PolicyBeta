@@ -1,0 +1,9 @@
+%p
+  Hi, #{@to.username}
+
+%p
+  Your policy "#{@policy.title}" has been accepted, and a new version of this policy has been created for you to refine further.
+
+%p
+  = link_to 'View policy', policy_url(@policy)
+

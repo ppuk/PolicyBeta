@@ -1,0 +1,26 @@
+en:
+  activerecord:
+    models:
+      policy: Policy
+
+    attributes:
+      policy:
+        title: Title
+        description: Description
+        category: Category
+        created_at: Created on
+        updated_at: Updated at
+        state: State
+
+        states:
+          suggestion: Suggestion
+          proposition: Proposition
+          vote: Vote
+          passed: Passed
+          rejected: Rejected
+
+        order_name:
+          created_asc: 'Oldest first'
+          created_desc: 'Newest first'
+          votes_asc: 'Worst first'
+          votes_desc: 'Best first'

@@ -1,0 +1,4 @@
+---
+  sidekiq_workers_location: "{{app_directory}}"
+  sidekiq_pid_location: "{{app_directory}}/tmp/sidekiq.pid"
+  sidekiq_log_location: "{{app_directory}}/log/sidekiq.log"

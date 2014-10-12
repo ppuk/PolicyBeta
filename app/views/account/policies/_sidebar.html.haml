@@ -1,0 +1,33 @@
+= ViewObject::PromotionTout::Base.new(current_user, policy).render(self)
+
+- if policy.editable?
+  .panel.panel-default
+    .panel-heading
+      %h4
+        = t('.edit')
+    %table.table
+      %tr
+        %td
+          %p
+            = t('.edit_instructions')
+          = link_to t('.edit_button'),        |
+            edit_account_policy_path(policy), |
+            class: 'btn btn-info'             |
+
+
+.panel.panel-danger
+  .panel-heading
+    %h4
+      = t('.delete')
+
+  %table.table
+    %tr
+      %td
+        %p
+          = t('.hard_delete_instructions')
+        = link_to t('.delete_button'),                   |
+          account_policy_path(policy),                   |
+          method: :delete,                               |
+          class: 'btn btn-danger',                       |
+          data: { confirm: t('.hard_delete_confirm') },  |
+          id: 'confirm_destroy'                          |

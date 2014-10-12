@@ -1,0 +1,677 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:47 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"username":"username_1","email":"user_1@example.com","updated_at":"2014-10-01T16:11:47.903Z","created_at":"2014-10-01T16:11:47.903Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"1","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:47 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:48 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"title":"iterate real-time initiatives","description":"Butcher lomo bicycle rights Four Loko sustainable biodiesel gentrify next level craft beer. Dreamcatcher thundercats readymade leggings cardigan bicycle rights Rerry Richardson sartorial twee. Williamsburg freegan cliche sustainable twee squid Brooklyn vice cardigan.","submitter_id":1,"state":"suggestion","category":"crime","cached_votes_score":0,"tags":["priority","trivial","rfc"],"updated_at":"2014-10-01T16:11:48.018Z","created_at":"2014-10-01T16:11:48.018Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '125'
+    body:
+      encoding: UTF-8
+      string: '{"took":7,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"1","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:48 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:48 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"priority"}
+        {"index":{"_id":2}}
+        {"name":"trivial"}
+        {"index":{"_id":3}}
+        {"name":"rfc"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '285'
+    body:
+      encoding: UTF-8
+      string: '{"took":13,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":1,"status":201}},{"index":{"_index":"test_tags","_type":"tag","_id":"2","_version":1,"status":201}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:48 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:48 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":2}}
+        {"username":"username_2","email":"admin_1@example.com","updated_at":"2014-10-01T16:11:48.454Z","created_at":"2014-10-01T16:11:48.454Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":5,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"2","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:48 GMT
+- request:
+    method: get
+    uri: http://localhost:9200/test_policies/policy/_search
+    body:
+      encoding: UTF-8
+      string: '{"facets":{"category":{"terms":{"field":"category"}},"state":{"terms":{"field":"state"}}},"sort":[{"cached_votes_score":"desc"}]}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '944'
+    body:
+      encoding: UTF-8
+      string: '{"took":2,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":1,"max_score":null,"hits":[{"_index":"test_policies","_type":"policy","_id":"1","_score":null,
+        "_source" : {"title":"iterate real-time initiatives","description":"Butcher
+        lomo bicycle rights Four Loko sustainable biodiesel gentrify next level craft
+        beer. Dreamcatcher thundercats readymade leggings cardigan bicycle rights
+        Rerry Richardson sartorial twee. Williamsburg freegan cliche sustainable twee
+        squid Brooklyn vice cardigan.","submitter_id":1,"state":"suggestion","category":"crime","cached_votes_score":0,"tags":["priority","trivial","rfc"],"updated_at":"2014-10-01T16:11:48.018Z","created_at":"2014-10-01T16:11:48.018Z"},"sort":[0]}]},"facets":{"category":{"_type":"terms","missing":0,"total":1,"other":0,"terms":[{"term":"crime","count":1}]},"state":{"_type":"terms","missing":0,"total":1,"other":0,"terms":[{"term":"suggestion","count":1}]}}}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:50 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"title":"iterate real-time initiatives","description":"Butcher lomo bicycle rights Four Loko sustainable biodiesel gentrify next level craft beer. Dreamcatcher thundercats readymade leggings cardigan bicycle rights Rerry Richardson sartorial twee. Williamsburg freegan cliche sustainable twee squid Brooklyn vice cardigan.","submitter_id":1,"state":"suggestion","category":"crime","cached_votes_score":0,"tags":["priority","trivial","rfc"],"updated_at":"2014-10-01T16:11:52.020Z","created_at":"2014-10-01T16:11:48.018Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '125'
+    body:
+      encoding: UTF-8
+      string: '{"took":7,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"1","_version":2,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"priority"}
+        {"index":{"_id":2}}
+        {"name":"trivial"}
+        {"index":{"_id":3}}
+        {"name":"rfc"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '285'
+    body:
+      encoding: UTF-8
+      string: '{"took":13,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":2,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"2","_version":2,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":2,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"username":"username_1","email":"user_1@example.com","updated_at":"2014-10-01T16:11:52.153Z","created_at":"2014-10-01T16:11:47.903Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"1","_version":2,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: get
+    uri: http://localhost:9200/test_policies/policy/_search
+    body:
+      encoding: UTF-8
+      string: '{"facets":{"category":{"terms":{"field":"category"}},"state":{"terms":{"field":"state"}}},"sort":[{"cached_votes_score":"desc"}]}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '944'
+    body:
+      encoding: UTF-8
+      string: '{"took":2,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":1,"max_score":null,"hits":[{"_index":"test_policies","_type":"policy","_id":"1","_score":null,
+        "_source" : {"title":"iterate real-time initiatives","description":"Butcher
+        lomo bicycle rights Four Loko sustainable biodiesel gentrify next level craft
+        beer. Dreamcatcher thundercats readymade leggings cardigan bicycle rights
+        Rerry Richardson sartorial twee. Williamsburg freegan cliche sustainable twee
+        squid Brooklyn vice cardigan.","submitter_id":1,"state":"suggestion","category":"crime","cached_votes_score":0,"tags":["priority","trivial","rfc"],"updated_at":"2014-10-01T16:11:52.020Z","created_at":"2014-10-01T16:11:48.018Z"},"sort":[0]}]},"facets":{"category":{"_type":"terms","missing":0,"total":1,"other":0,"terms":[{"term":"crime","count":1}]},"state":{"_type":"terms","missing":0,"total":1,"other":0,"terms":[{"term":"suggestion","count":1}]}}}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"title":"iterate real-time initiatives","description":"Butcher lomo bicycle rights Four Loko sustainable biodiesel gentrify next level craft beer. Dreamcatcher thundercats readymade leggings cardigan bicycle rights Rerry Richardson sartorial twee. Williamsburg freegan cliche sustainable twee squid Brooklyn vice cardigan.","submitter_id":1,"state":"proposition","category":"crime","cached_votes_score":0,"tags":["rfc","trivial","priority"],"updated_at":"2014-10-01T16:11:52.531Z","created_at":"2014-10-01T16:11:48.018Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '125'
+    body:
+      encoding: UTF-8
+      string: '{"took":7,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"1","_version":3,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"priority"}
+        {"index":{"_id":2}}
+        {"name":"trivial"}
+        {"index":{"_id":3}}
+        {"name":"rfc"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '285'
+    body:
+      encoding: UTF-8
+      string: '{"took":34,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":3,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"2","_version":3,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":3,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"title":"iterate real-time initiatives","description":"Butcher lomo bicycle rights Four Loko sustainable biodiesel gentrify next level craft beer. Dreamcatcher thundercats readymade leggings cardigan bicycle rights Rerry Richardson sartorial twee. Williamsburg freegan cliche sustainable twee squid Brooklyn vice cardigan.","submitter_id":1,"state":"proposition","category":"crime","cached_votes_score":0,"tags":["rfc","trivial","priority"],"updated_at":"2014-10-01T16:11:52.663Z","created_at":"2014-10-01T16:11:48.018Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '125'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"1","_version":4,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"priority"}
+        {"index":{"_id":2}}
+        {"name":"trivial"}
+        {"index":{"_id":3}}
+        {"name":"rfc"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '285'
+    body:
+      encoding: UTF-8
+      string: '{"took":12,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":4,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"2","_version":4,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":4,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:11:52 GMT
+recorded_with: VCR 2.9.2

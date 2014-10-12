@@ -1,0 +1,49 @@
+---
+- name: Provision App
+  hosts: staging-app
+  user: root
+  gather_facts: true
+  sudo: true
+
+  vars:
+    domain_name: "{{environment_name}}.{{app_name}}.com"
+    environment_name: staging
+    rails_environment_name: production
+
+  vars_files: 
+    - vars/common.yml
+    - secret/staging.yml
+
+  roles:
+    - user
+    - common
+    - environment_vars
+    - ruby-2.1.2
+    - nginx
+
+
+- name: Provision Util
+  hosts: staging-util
+  user: root
+  gather_facts: true
+  sudo: true
+
+  vars:
+    domain_name: "{{environment_name}}.{{app_name}}.com"
+    environment_name: staging
+    rails_environment_name: production
+
+  vars_files: 
+    - vars/common.yml
+    - vars/elasticsearch.yml
+    - secret/staging.yml
+
+  roles:
+    - user
+    - common
+    - environment_vars
+    - ruby-2.1.2
+    - postgres
+    - redis
+    - sidekiq
+    - ansible-elasticsearch

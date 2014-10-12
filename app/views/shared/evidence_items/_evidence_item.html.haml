@@ -1,0 +1,13 @@
+%li.evidence_item
+  = vote_input(evidence_item, current_user)
+  .evidence-data
+    %h4
+      = evidence_item.title
+    = markdown(evidence_item.description)
+
+    .meta
+      = evidence_item.submitter.username
+      = evidence_item.created_at
+      = evidence_item.approved_state
+
+    %div{ data: { default_open: false, allow_create: (signed_in? && policy.commentable? ? 1 : 0), behavior: 'comments', item_id: evidence_item.id, item_type: 'evidence_item', replies_count: evidence_item.comments_count } }

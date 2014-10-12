@@ -1,0 +1,5 @@
+en:
+  simple_form:
+    helpers:
+      user_search:
+        create: 'Search'

@@ -1,0 +1,20 @@
+json:
+  errors:
+    format: '%{message}'
+    messages:
+      wrong_size: wrong_size
+      size_too_small: too_small
+      size_too_big: too_big
+      blank: blank
+      invalid: invalid
+      taken: taken
+      missing: missing
+      inclusion: invalid
+      record_invalid: invalid
+      invalid_subject: invalid
+      invalid_school: invalid
+      due_date_cannot_be_before_issued_date: invalid
+      inclusion: invalid
+      issued_date_cannot_be_more_than_three_days_ago: invalid
+      too_long: too_long
+      too_short: too_short

@@ -1,0 +1,50 @@
+en:
+  account:
+    policies:
+      index:
+        title: Policies
+        title: Title
+        created_at: Created at
+        new_link: New
+
+      policy:
+        edit_link: Edit
+        show_link: Detail
+
+      promotion_tout:
+        request_promotion:
+          promote: Request Promotion
+          request_promotion: Request promotion
+          promote_instructions: Click the button below to ask an admin to promote this policy
+
+        waiting_on_user:
+          promote: Promotion Requested
+          waiting_on_user: Waiting for admin to confirm promotion
+
+        confirm_promotion:
+          promote: Confirm Promotion
+          promote_instructions: Click the buttons below to confirm or reject promoting this policy to the next stage.
+          approve_promotion: Approve
+          decline_promotion: Reject
+
+      sidebar:
+        edit: Edit policy
+        edit_instructions: Edit your policy information.
+        edit_button: Edit
+
+        delete: Delete policy
+        hard_delete_instructions: Delete this policy, removing all associated comments
+        delete_button: Fully delete this policy
+        hard_delete_confirm: Are you sure you want to completely delete this policy?
+
+      show:
+        title: '%{title}'
+
+      new:
+        title: New policy
+        submit: Create policy
+
+      edit:
+        title: Edit policy
+        submit: Save changes
+

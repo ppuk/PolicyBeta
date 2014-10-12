@@ -1,0 +1,31 @@
+.panel.panel-default
+  .panel-heading
+    .row
+      .col-md-8
+        %h4
+          = t('.title')
+      .col-md-4
+        .pull-right
+          = render partial: 'shared/search_form'
+
+  %table.table
+    %thead
+      %tr
+        %th
+          = t('.login_id')
+        %th
+          = t('.role')
+        %th
+          = t('.created_at')
+        %th
+          = t('.confirmed')
+        %th
+          .pull-right
+            = link_to t('.new_link'), new_admin_user_path, class: 'btn btn-success'
+    %tbody
+      = render users
+
+  - if users.total_pages > 1
+    .panel-footer
+      = paginate users
+

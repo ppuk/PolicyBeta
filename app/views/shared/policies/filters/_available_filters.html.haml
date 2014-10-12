@@ -1,0 +1,9 @@
+- @search.available_filters.each do |filter, values|
+  - if values.any?
+    %h4
+      = t(filter)
+    %ul.filters
+      - values.each do |value|
+        %li
+          = link_to value.value_with_count, params.deep_merge( search: { filter => value.value } ), value.html_options
+

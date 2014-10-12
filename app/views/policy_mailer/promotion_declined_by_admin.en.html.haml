@@ -1,0 +1,9 @@
+%p
+  Hi, #{@to.username}
+
+%p
+  Your policy "#{@policy.title}" has been declined for promotion to the next stage.
+
+%p
+  = link_to 'View policy', policy_url(@policy)
+

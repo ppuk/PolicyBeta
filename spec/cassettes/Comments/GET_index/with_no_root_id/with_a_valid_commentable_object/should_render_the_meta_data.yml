@@ -1,0 +1,2441 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"username":"username_136","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"1","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":2}}
+        {"username":"username_137","email":"user_27@example.com","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":7,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"2","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":3}}
+        {"username":"username_138","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":5,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"3","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":4}}
+        {"username":"username_139","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"4","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":5}}
+        {"username":"username_140","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":5,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"5","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"title":"incentivize sexy e-services","description":"Whatever Marfa Four Loko skateboard beard freegan farm-to-table retro yr. Fixie vinyl jean shorts Cosby Sweater Portland whatever Rerry Richardson. Aesthetic Wes Anderson raw denim photo booth keytar vinyl trust fund cred letterpress. Carles Rerry Richardson raw denim moon banh mi scenester art fanny pack.\nBlog letterpress seitan squid fixie whatever leggings. Before they sold out chambray craft beer fanny pack trust fund thundercats Rerry Richardson locavore. Put a bird on it salvia wolf quinoa VHS you probably haven't heard of them.","submitter_id":2,"state":"passed","category":"development","cached_votes_score":0,"tags":["trivial","rfc","important"],"updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '126'
+    body:
+      encoding: UTF-8
+      string: '{"took":80,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"1","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"trivial"}
+        {"index":{"_id":2}}
+        {"name":"rfc"}
+        {"index":{"_id":3}}
+        {"name":"important"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '286'
+    body:
+      encoding: UTF-8
+      string: '{"took":110,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":1,"status":201}},{"index":{"_index":"test_tags","_type":"tag","_id":"2","_version":1,"status":201}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":6}}
+        {"username":"username_141","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":77,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"6","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":7}}
+        {"username":"username_142","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":12,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"7","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":8}}
+        {"username":"username_143","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":36,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"8","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":9}}
+        {"username":"username_144","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '122'
+    body:
+      encoding: UTF-8
+      string: '{"took":255,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"9","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":10}}
+        {"username":"username_145","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '123'
+    body:
+      encoding: UTF-8
+      string: '{"took":117,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"10","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":11}}
+        {"username":"username_146","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '122'
+    body:
+      encoding: UTF-8
+      string: '{"took":13,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"11","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":12}}
+        {"username":"username_147","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":7,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"12","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":13}}
+        {"username":"username_148","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":5,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"13","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":14}}
+        {"username":"username_149","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"14","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":15}}
+        {"username":"username_150","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":5,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"15","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":16}}
+        {"username":"username_151","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"16","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":17}}
+        {"username":"username_152","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":8,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"17","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":18}}
+        {"username":"username_153","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '122'
+    body:
+      encoding: UTF-8
+      string: '{"took":27,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"18","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":19}}
+        {"username":"username_154","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"19","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":20}}
+        {"username":"username_155","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"20","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":21}}
+        {"username":"username_156","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '122'
+    body:
+      encoding: UTF-8
+      string: '{"took":47,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"21","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":22}}
+        {"username":"username_157","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '122'
+    body:
+      encoding: UTF-8
+      string: '{"took":14,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"22","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":23}}
+        {"username":"username_158","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"23","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":24}}
+        {"username":"username_159","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"24","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":25}}
+        {"username":"username_160","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"25","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":26}}
+        {"username":"username_161","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":7,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"26","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":27}}
+        {"username":"username_162","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '122'
+    body:
+      encoding: UTF-8
+      string: '{"took":41,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"27","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":28}}
+        {"username":"username_163","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"28","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":29}}
+        {"username":"username_164","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"29","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":30}}
+        {"username":"username_165","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":5,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"30","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":31}}
+        {"username":"username_166","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"31","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":32}}
+        {"username":"username_167","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '122'
+    body:
+      encoding: UTF-8
+      string: '{"took":14,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"32","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":33}}
+        {"username":"username_168","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '122'
+    body:
+      encoding: UTF-8
+      string: '{"took":16,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"33","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":34}}
+        {"username":"username_169","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":5,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"34","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":35}}
+        {"username":"username_170","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":5,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"35","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":36}}
+        {"username":"username_171","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"36","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":37}}
+        {"username":"username_172","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '122'
+    body:
+      encoding: UTF-8
+      string: '{"took":12,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"37","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":38}}
+        {"username":"username_173","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"38","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":39}}
+        {"username":"username_174","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"39","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":40}}
+        {"username":"username_175","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":8,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"40","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":41}}
+        {"username":"username_176","email":"","updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"41","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"title":"incentivize sexy e-services","description":"Whatever Marfa Four Loko skateboard beard freegan farm-to-table retro yr. Fixie vinyl jean shorts Cosby Sweater Portland whatever Rerry Richardson. Aesthetic Wes Anderson raw denim photo booth keytar vinyl trust fund cred letterpress. Carles Rerry Richardson raw denim moon banh mi scenester art fanny pack.\nBlog letterpress seitan squid fixie whatever leggings. Before they sold out chambray craft beer fanny pack trust fund thundercats Rerry Richardson locavore. Put a bird on it salvia wolf quinoa VHS you probably haven't heard of them.","submitter_id":2,"state":"passed","category":"development","cached_votes_score":0,"tags":["important","rfc","trivial"],"updated_at":"2014-10-01T16:13:22.926Z","created_at":"2014-10-01T16:13:22.926Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '125'
+    body:
+      encoding: UTF-8
+      string: '{"took":7,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"1","_version":2,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"trivial"}
+        {"index":{"_id":2}}
+        {"name":"rfc"}
+        {"index":{"_id":3}}
+        {"name":"important"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '285'
+    body:
+      encoding: UTF-8
+      string: '{"took":13,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":2,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"2","_version":2,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":2,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:13:22 GMT
+recorded_with: VCR 2.9.2

@@ -1,0 +1,277 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:15:32 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"username":"username_625","email":"admin_59@example.com","updated_at":"2014-10-01T16:15:32.236Z","created_at":"2014-10-01T16:15:32.236Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":7,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"1","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:15:32 GMT
+- request:
+    method: get
+    uri: http://localhost:9200/test_policies/policy/_search
+    body:
+      encoding: UTF-8
+      string: '{"facets":{"category":{"terms":{"field":"category"}},"state":{"terms":{"field":"state"}}},"sort":[{"cached_votes_score":"desc"}]}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '274'
+    body:
+      encoding: UTF-8
+      string: '{"took":1,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":0,"max_score":null,"hits":[]},"facets":{"category":{"_type":"terms","missing":0,"total":0,"other":0,"terms":[]},"state":{"_type":"terms","missing":0,"total":0,"other":0,"terms":[]}}}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:15:32 GMT
+- request:
+    method: get
+    uri: http://localhost:9200/test_policies/policy/_search
+    body:
+      encoding: UTF-8
+      string: '{"facets":{"category":{"terms":{"field":"category"}},"state":{"terms":{"field":"state"}}},"sort":[{"cached_votes_score":"desc"}]}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '274'
+    body:
+      encoding: UTF-8
+      string: '{"took":1,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":0,"max_score":null,"hits":[]},"facets":{"category":{"_type":"terms","missing":0,"total":0,"other":0,"terms":[]},"state":{"_type":"terms","missing":0,"total":0,"other":0,"terms":[]}}}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:15:32 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:15:32 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":2}}
+        {"username":"username_626","email":"user_51@example.com","updated_at":"2014-10-01T16:15:32.368Z","created_at":"2014-10-01T16:15:32.368Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"2","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:15:32 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:15:32 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"title":"maximize bleeding-edge metrics","description":"Fixie retro leggings keffiyeh Williamsburg butcher tumblr sartorial. Vhs fap 8-bit leggings Williamsburg irony sartorial fixie next level. Ethical cred party trust fund farm-to-table tattooed fap Cosby Sweater biodiesel.\nPitchfork PBR ethical Wes Anderson yr farm-to-table next level Shoreditch. Cliche echo park mustache lomo fanny pack synth. Brunch photo booth organic master cleanse stumptown yr bicycle rights chambray. Twee jean shorts thundercats banh mi iPhone.\nFour loko twee scenester wolf Carles sartorial Brooklyn party ethical. Jean shorts biodiesel leggings Williamsburg lomo banh mi. Yr blog 8-bit salvia lo-fi you probably haven't heard of them echo park. Salvia yr locavore photo booth stumptown Rerry Richardson fixie art.","submitter_id":2,"state":"proposition","category":"crime","cached_votes_score":0,"tags":["priority","trivial","rfc"],"updated_at":"2014-10-01T16:15:32.400Z","created_at":"2014-10-01T16:15:32.400Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '125'
+    body:
+      encoding: UTF-8
+      string: '{"took":9,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"1","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:15:32 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:15:32 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"rfc"}
+        {"index":{"_id":2}}
+        {"name":"trivial"}
+        {"index":{"_id":3}}
+        {"name":"priority"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '285'
+    body:
+      encoding: UTF-8
+      string: '{"took":13,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":1,"status":201}},{"index":{"_index":"test_tags","_type":"tag","_id":"2","_version":1,"status":201}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:15:32 GMT
+recorded_with: VCR 2.9.2

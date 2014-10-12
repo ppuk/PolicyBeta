@@ -1,0 +1,20 @@
+!!!
+/[if lt IE 7] <html lang="en" class="lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html lang="en" class="lt-ie9 lt-ie8">
+/[if IE 8] <html lang="en" class="lt-ie9">
+/[if IE 9] <html lang="en" class="lt-ie10">
+/ [if gt IE 9]><!
+%html{lang: "en"}
+  / <![endif]
+  %head
+    %meta{charset: "utf-8"}/
+    %title
+      = t('site_title')
+
+    = stylesheet_link_tag :application, media: :all
+    = javascript_include_tag :application
+    = csrf_meta_tags
+
+  %body
+    = yield
+    = render partial: 'footer'

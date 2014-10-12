@@ -1,0 +1,31 @@
+.row
+  .col-md-5
+    .panel.panel-default
+      .panel-heading
+        = render partial: 'nav'
+        %h4
+          Details
+
+      %table.table
+        %tr
+          %td
+            = t('name', scope: 'activerecord.attributes.category')
+          %td
+            = category.name_badge
+
+    .panel.panel-danger
+      .panel-heading
+        %h4
+          = t('delete')
+
+      %table.table
+        %tr
+          %td
+            %p
+              = t('.hard_delete_instructions')
+            = link_to t('.delete_button'),                   |
+              admin_category_path(category),                 |
+              method: :delete,                               |
+              class: 'btn btn-danger',                       |
+              data: { confirm: t('.hard_delete_confirm') },  |
+              id: 'confirm_destroy'                          |

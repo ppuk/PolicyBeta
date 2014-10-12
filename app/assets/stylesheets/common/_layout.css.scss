@@ -1,0 +1,14 @@
+@media only screen and (min-width : 768px) {
+    /* Make Navigation Toggle on Desktop Hover */
+
+    .dropdown:hover {
+      a.dropdown-toggle {
+        background: #e7e7e7 !important;
+        color: #555555 !important;
+      }
+
+      .dropdown-menu {
+        display: block;
+      }
+    }
+}

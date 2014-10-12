@@ -1,0 +1,15 @@
+.panel.panel-default
+  .panel-heading
+    %h4
+      = t('.promote')
+  %table.table
+    %tr
+      %td
+        %p
+          = t('.promote_instructions')
+
+        .span
+          = link_to(t('.approve_promotion'), approve_promotion_policy_path, class: 'btn btn-success', method: :put)
+
+        %span.pull-right
+          = link_to(t('.decline_promotion'), decline_promotion_policy_path, class: 'btn btn-danger', method: :put)

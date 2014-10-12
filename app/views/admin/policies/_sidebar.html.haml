@@ -1,0 +1,58 @@
+= ViewObject::PromotionTout::Base.new(current_user, policy).render(self)
+
+- if policy.state == 'vote'
+  .panel.panel-default
+    .panel-heading
+      %h4
+        = t('.accept_or_decline')
+    %table.table
+      %tr
+        %td
+          %p
+            = t('.accept_or_decline_instructions')
+          %span
+            = link_to t('.accept_button'),            |
+              accept_admin_policy_path(policy),       |
+              class: 'btn btn-success',               |
+              method: :post,                          |
+              data: { confirm: t('.confirm_accept') } |
+
+          %span.pull-right
+            = link_to t('.decline_button'),            |
+              decline_admin_policy_path(policy),       |
+              class: 'btn btn-danger',                 |
+              method: :post,                           |
+              data: { confirm: t('.confirm_decline') } |
+
+
+.panel.panel-default
+  .panel-heading
+    %h4
+      = t('.edit')
+  %table.table
+    %tr
+      %td
+        %p
+          = t('.edit_instructions')
+        = link_to t('.edit_button'),        |
+          edit_admin_policy_path(policy), |
+          class: 'btn btn-info'             |
+
+.panel.panel-danger
+  .panel-heading
+    %h4
+      = t('.delete')
+
+  %table.table
+    %tr
+      %td
+        %p
+          = t('.hard_delete_instructions')
+        = link_to t('.delete_button'),                   |
+          admin_policy_path(policy),                     |
+          method: :delete,                               |
+          class: 'btn btn-danger',                       |
+          data: { confirm: t('.hard_delete_confirm') },  |
+          id: 'confirm_destroy'                          |
+
+

@@ -1,0 +1,13 @@
+en:
+  flash:
+    category:
+      create:
+        success: Category created
+        failure: Category not created
+      update:
+        success: Category updated
+        failure: Category not updated
+      destroy:
+        success: Category deleted
+        failure: 'Category not deleted. %{errors}'
+

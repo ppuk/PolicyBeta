@@ -1,0 +1,35 @@
+---
+- name: install postgres packages for Ubuntu
+  apt:
+    pkg: "{{ item }}"
+    state: installed
+    update-cache: yes
+  with_items:
+    - postgresql
+    - libpq-dev
+    - python-psycopg2
+
+- name: setup database
+  sudo_user: postgres
+  postgresql_db:
+    name: "{{ db_name }}"
+    encoding: 'UTF-8'
+    lc_collate: 'en_US.UTF-8'
+    lc_ctype: 'en_US.UTF-8'
+    template: 'template0'
+    state: present
+
+- name: grant access for database to user
+  sudo_user: postgres
+  postgresql_user:
+    db: "{{ db_name }}"
+    user: "{{ db_user }}"
+    password: "{{ db_pass }}"
+    role_attr_flags: "NOSUPERUSER"
+    state: present
+
+- name: ensure postgres is running
+  service:
+    name: postgresql
+    state: started
+    enabled: yes

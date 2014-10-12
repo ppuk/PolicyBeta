@@ -1,0 +1,9 @@
+- if @search.filtered?
+  %h4
+    = t('.selected_filters')
+  %ul.filters
+    - @search.applied_filters.each do |filter, value|
+      %li
+        - new_params = params.deep_dup
+        - new_params[:search].delete(filter)
+        = link_to value.display_value, new_params, value.html_options

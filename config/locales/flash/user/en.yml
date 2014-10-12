@@ -1,0 +1,23 @@
+en:
+  flash:
+    user:
+      email_not_confirmed: Users email has not been confirmed, so we cannot send emails to this address. Please confirm the users email address first.
+      email_not_confirmed_user: You need to add an email address before you can do this
+      password_reset:
+        sent: Password reset sent
+      unconfirm_email:
+        success: User email unconfirmed
+      confirm_email:
+        success: User email confirmed
+      create:
+        success: User created
+        failure: User not created
+      update:
+        success: User updated
+        failure: User not updated
+      destroy:
+        success: User deleted
+        failure: User not deleted
+      soft_delete:
+        success: User anonymised
+        failure: User not anonymised

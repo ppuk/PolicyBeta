@@ -1,0 +1,9 @@
+%tr{ data: { category_id: category.id } }
+  %td
+    = link_to category.name_badge, admin_category_path(category)
+  %td
+    = category.created_at
+  %td
+    .pull-right
+      = link_to t('.show_link'), admin_category_path(category), class: 'btn btn-primary'
+      = link_to t('.edit_link'), edit_admin_category_path(category), class: 'btn btn-info'

@@ -1,0 +1,12 @@
+%h2
+  = t('.title')
+
+- if policy.receiving_evidence?
+  = link_to t('.new_item'), new_account_policy_evidence_item_path(policy), class: 'btn btn-success'
+
+- if evidence_items.any?
+  %ul.evidence
+    = render partial: 'shared/evidence_items/evidence_item', collection: evidence_items
+- else
+  %h4
+    = t('.no_evidence')

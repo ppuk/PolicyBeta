@@ -1,0 +1,32 @@
+description "Sidekiq Background Worker"
+
+start on runlevel [23]
+stop on (stopping workers or runlevel [06])
+
+setuid app
+setgid app
+
+respawn
+respawn limit 3 30
+
+# TERM is sent by sidekiqctl when stopping sidekiq.  Without declaring these as normal exit codes, it just respawns.
+normal exit 0 TERM
+
+instance $index
+
+env LANG=en_US.UTF-8
+env APP_HOME={{app_directory}}
+
+script
+# this script runs in /bin/sh by default
+# respawn as bash so we can source in rbenv
+exec /bin/bash <<EOT
+  . /etc/profile.d/app_env.sh
+
+  # use syslog for logging
+  exec &> /dev/kmsg
+
+  cd $APP_HOME
+  exec bin/sidekiq -i ${index} -P $APP_HOME/tmp/sidekiq.pid -e production -r $APP_HOME -L $APP_HOME/log/sidekiq.log
+EOT
+end script

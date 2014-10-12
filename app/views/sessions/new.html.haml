@@ -1,0 +1,11 @@
+.sign-in
+  %h2
+    = t '.title'
+
+  = simple_form_for :session, url: session_path do |form|
+    = form.input :email, label: t('.username_or_email'), as: :string
+    = form.input :password
+    = form.submit(class: 'btn btn-primary')
+
+    .other-links
+      = link_to t('.forgot_password'), new_password_path

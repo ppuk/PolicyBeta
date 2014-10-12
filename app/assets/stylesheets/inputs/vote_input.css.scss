@@ -1,0 +1,78 @@
+.vote_state {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60px;
+
+  a {
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: #666;
+
+    &:hover {
+      color: #333;
+      text-decoration: none;
+      background-color: #eaeaea;
+
+      &.selected {
+        background-color: rgb(255, 199, 95);
+      }
+    }
+
+    &.upvote {
+      border-bottom: 1px solid #ccc;
+    }
+
+    &.downvote {
+      border-top: 1px solid #ccc;
+    }
+  }
+
+  a.selected {
+    background-color: orange;
+  }
+
+  .vote_total {
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    padding: 5px 10px;
+  }
+}
+
+
+.flasher {
+    -webkit-animation-name: flashing;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: flashing;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: flashing;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes flashing {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes flashing {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes flashing {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}

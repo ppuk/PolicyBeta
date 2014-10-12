@@ -1,0 +1,21 @@
+en:
+  flash:
+    policy:
+      cannot_edit_policy: This policy cannot be edited.
+
+      accepted: Policy accepted, and submitter emailed
+      not_accepted: Policy not accepted
+
+      declined: Policy rejected, and submitter emailed
+      not_declined: Policy not rejected
+
+      create:
+        success: Policy created
+        failure: Policy not created
+      update:
+        success: Policy updated
+        failure: Policy not updated
+      destroy:
+        success: Policy deleted
+        failure: Policy not deleted
+

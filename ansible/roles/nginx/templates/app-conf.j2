@@ -1,0 +1,7 @@
+server {
+  listen               80;
+
+  server_name          {{domain_name}};
+  root                 {{app_directory}}/public;
+  passenger_enabled    on;
+}

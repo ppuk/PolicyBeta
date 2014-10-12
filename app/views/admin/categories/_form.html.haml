@@ -1,0 +1,5 @@
+= simple_form_for [:admin, category] do |f|
+  = f.input :name
+  = f.input :colour, as: :minicolors, input_html: { class: 'form-control', data: { minicolors: { theme: :bootstrap, position: :left } } }
+  = f.button :submit, submit_text, class: 'btn btn-primary'
+

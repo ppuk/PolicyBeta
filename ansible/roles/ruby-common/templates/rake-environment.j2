@@ -1,0 +1,4 @@
+#!/bin/bash
+export RAILS_ENV={{environment_name}}
+export RACK_ENV={{environment_name}}
+exec "{{ ruby_location }}/bin/rake" "$@"

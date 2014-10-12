@@ -1,0 +1,45 @@
+.row
+  .col-md-1
+    .vote-gutter
+      = vote_input(policy, current_user)
+
+  .col-md-8
+    %h2
+      = policy.title
+
+    .meta
+      .category
+        = policy.category.name_badge
+        = policy.state_badge
+
+      .tags
+        = policy.tags_list
+
+      .submitter
+        = policy.submitter.username
+
+      - if policy.previous_version
+        .previous_version
+          = link_to t('.previous_version'), policy_path(policy.previous_version)
+
+      - if policy.next_versions
+        .next_versions
+          - policy.next_versions.each do |next_version|
+            = link_to t('.next_version'), policy_path(next_version)
+
+    .details
+      = markdown(policy.description)
+
+    = render partial: 'shared/evidence_items/list', locals: { evidence_items: policy.evidence_items }
+
+    %h2
+      Comments
+
+    - if !signed_in?
+      = link_to t('.sign_in_to_comment'), sign_in_path
+
+    %div{ data: { default_open: 1, allow_create: (signed_in? && policy.commentable? ? 1 : 0), behavior: 'comments', item_id: policy.id, item_type: 'policy' } }
+
+  .col-md-3
+    - sidebar = signed_in? ? (current_user.is_admin? ? 'admin/policies/sidebar' : 'account/policies/sidebar') : nil
+    = render partial: sidebar if sidebar

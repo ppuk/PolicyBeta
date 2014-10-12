@@ -1,0 +1,13 @@
+%tr{ data: { user_id: user.id } }
+  %td
+    = link_to user.logged_in_display_name, admin_user_path(user)
+  %td
+    = user.display_role
+  %td
+    = user.created_at
+  %td
+    = user.email_confirmation_line
+  %td
+    .pull-right
+      = link_to t('.show_link'), admin_user_path(user), class: 'btn btn-primary'
+      = link_to t('.edit_link'), edit_admin_user_path(user), class: 'btn btn-info'

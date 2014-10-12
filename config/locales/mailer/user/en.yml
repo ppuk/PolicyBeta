@@ -1,0 +1,10 @@
+en:
+  user_mailer:
+    welcome:
+      subject: Welcome
+
+    change_password:
+      subject: Change your password
+
+    confirm_email:
+      subject: Confirm your email address

@@ -1,0 +1,16 @@
+en:
+  flash:
+    evidence_item:
+
+      cannot_add_evidence: Cannot add evidence to this policy
+
+      create:
+        success: Evidence created
+        failure: Evidence not created
+      update:
+        success: Evidence updated
+        failure: Evidence not updated
+      destroy:
+        success: Evidence deleted
+        failure: Evidence not deleted
+

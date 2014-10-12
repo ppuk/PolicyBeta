@@ -1,0 +1,14 @@
+en:
+  account:
+    evidence_items:
+
+      form: 
+        submit: Save
+
+      new:
+        title: Submit Evidence
+
+      edit:
+        title: Edit evidence
+
+

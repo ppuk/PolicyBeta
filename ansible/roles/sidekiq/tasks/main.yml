@@ -1,0 +1,6 @@
+---
+- name: Add sidekiq upstart script
+  template: src=upstart-conf.j2
+            dest=/etc/init/sidekiq.conf
+            mode=644
+  notify: Reload init config

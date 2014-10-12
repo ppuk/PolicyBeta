@@ -1,0 +1,5 @@
+en:
+  time:
+    formats:
+      admin: '%H:%M %d/%m/%Y'
+      form: '%d/%m/%Y %H:%M'

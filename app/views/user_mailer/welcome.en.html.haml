@@ -1,0 +1,8 @@
+%p
+  Welcome to #{I18n.t('site_title')}
+
+%p
+  Before we send you any email, please confirm your email address is correct by clicking the link below. If you did not register this account, please ignore this email.
+
+%p
+  = link_to('Confirm my email address', confirmation_url(@user, email_hash: @user.email_confirmation_url_token, token: @user.email_confirmation_token))

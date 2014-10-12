@@ -1,0 +1,8 @@
+en:
+  errors:
+    '404':
+      title: Page Missing
+    '422':
+      title: Invalid Request
+    '500':
+      title: Internal Error

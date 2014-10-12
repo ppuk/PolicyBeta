@@ -1,0 +1,29 @@
+.btn-group.pull-right
+  = link_to t('edit_link', scope: 'admin.users'), edit_admin_user_path(user), class: 'btn btn-default'
+
+  .btn-group
+    %button{type: 'button', class: 'btn btn-default dropdown-toggle', data: { toggle: 'dropdown' } }
+      = t('.actions_link')
+      %span.caret
+    %ul.dropdown-menu{role: 'menu'}
+      %li
+        - if user.email_confirmed?
+          = link_to t('unconfirm_email_link', scope: 'admin.users'),
+              unconfirm_email_admin_user_path(user),
+              method: :put,
+              data: { confirm: t('.unconfirm_email_confirm') }
+        - else
+          = link_to t('confirm_email_link', scope: 'admin.users'),
+              confirm_email_admin_user_path(user),
+              method: :put,
+              data: { confirm: t('.confirm_email_confirm') }
+      %li
+        = link_to t('send_password_reset_link', scope: 'admin.users'),
+            send_password_reset_admin_user_path(user),
+            method: :post,
+            data: { confirm: t('.send_password_reset_confirm') }
+      %li
+        = link_to t('impersonate_link', scope: 'admin.users'),
+            impersonate_admin_user_path(user),
+            method: :post,
+            data: { confirm: t('.impersonate_confirm') }

@@ -1,0 +1,5 @@
+= simple_form_for @search, as: :search, url: '', method: :get do |f|
+  .input-group
+    = f.input_field :query, class: 'form-control'
+    %span.input-group-btn
+      = f.submit I18n.t('create', scope: 'simple_form.helpers.user_search'), class: 'btn btn-default'

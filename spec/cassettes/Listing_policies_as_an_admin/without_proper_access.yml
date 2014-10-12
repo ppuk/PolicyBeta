@@ -1,0 +1,473 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"username":"username_835","email":"user_122@example.com","updated_at":"2014-10-01T16:17:48.528Z","created_at":"2014-10-01T16:17:48.528Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '121'
+    body:
+      encoding: UTF-8
+      string: '{"took":10,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"1","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"title":"evolve front-end deliverables","description":"Before they sold out mixtape vegan American Apparel next level skateboard. Sartorial locavore moon keytar chambray Portland lo-fi fap. High life cliche master cleanse food truck PBR twee.\nPut a bird on it jean shorts locavore next level thundercats letterpress skateboard cardigan vice. Scenester Portland thundercats sustainable before they sold out you probably haven't heard of them. Leggings viral Wes Anderson whatever squid put a bird on it gluten-free biodiesel.","submitter_id":1,"state":"proposition","category":"business","cached_votes_score":0,"tags":["discussion","trivial","priority"],"updated_at":"2014-10-01T16:17:48.596Z","created_at":"2014-10-01T16:17:48.596Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '125'
+    body:
+      encoding: UTF-8
+      string: '{"took":7,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"1","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"priority"}
+        {"index":{"_id":2}}
+        {"name":"trivial"}
+        {"index":{"_id":3}}
+        {"name":"discussion"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '285'
+    body:
+      encoding: UTF-8
+      string: '{"took":14,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":1,"status":201}},{"index":{"_index":"test_tags","_type":"tag","_id":"2","_version":1,"status":201}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":2}}
+        {"username":"username_836","email":"user_123@example.com","updated_at":"2014-10-01T16:17:48.705Z","created_at":"2014-10-01T16:17:48.705Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"2","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":2}}
+        {"title":"repurpose cross-platform solutions","description":"Artisan single-origin coffee Cosby Sweater VHS craft beer sartorial party Pitchfork. Butcher brunch hoodie sustainable next level vinyl art iPhone. Wes anderson Cosby Sweater keffiyeh trust fund leggings blog squid American Apparel Brooklyn. Irony ethical moon Banksy raw denim skateboard vegan tumblr mixtape.\nEcho park retro Brooklyn Marfa 8-bit. Squid high life tumblr lomo stumptown helvetica. Fixie banh mi mlkshk Brooklyn twee farm-to-table master cleanse. Austin helvetica dreamcatcher readymade vegan letterpress Wayfarers messenger bag mixtape.","submitter_id":2,"state":"proposition","category":"crime","cached_votes_score":0,"tags":["priority","discussion","rfc"],"updated_at":"2014-10-01T16:17:48.738Z","created_at":"2014-10-01T16:17:48.738Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '126'
+    body:
+      encoding: UTF-8
+      string: '{"took":12,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"2","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"priority"}
+        {"index":{"_id":3}}
+        {"name":"discussion"}
+        {"index":{"_id":4}}
+        {"name":"rfc"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '285'
+    body:
+      encoding: UTF-8
+      string: '{"took":16,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":2,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":2,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"4","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":3}}
+        {"username":"username","email":"user@example.com","updated_at":"2014-10-01T16:17:48.898Z","created_at":"2014-10-01T16:17:48.898Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"3","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:48 GMT
+- request:
+    method: get
+    uri: http://localhost:9200/test_policies/policy/_search
+    body:
+      encoding: UTF-8
+      string: '{"facets":{"category":{"terms":{"field":"category"}},"state":{"terms":{"field":"state"}}},"sort":[{"cached_votes_score":"desc"}]}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2099'
+    body:
+      encoding: UTF-8
+      string: '{"took":3,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":2,"max_score":null,"hits":[{"_index":"test_policies","_type":"policy","_id":"1","_score":null,
+        "_source" : {"title":"evolve front-end deliverables","description":"Before
+        they sold out mixtape vegan American Apparel next level skateboard. Sartorial
+        locavore moon keytar chambray Portland lo-fi fap. High life cliche master
+        cleanse food truck PBR twee.\nPut a bird on it jean shorts locavore next level
+        thundercats letterpress skateboard cardigan vice. Scenester Portland thundercats
+        sustainable before they sold out you probably haven''t heard of them. Leggings
+        viral Wes Anderson whatever squid put a bird on it gluten-free biodiesel.","submitter_id":1,"state":"proposition","category":"business","cached_votes_score":0,"tags":["discussion","trivial","priority"],"updated_at":"2014-10-01T16:17:48.596Z","created_at":"2014-10-01T16:17:48.596Z"},"sort":[0]},{"_index":"test_policies","_type":"policy","_id":"2","_score":null,
+        "_source" : {"title":"repurpose cross-platform solutions","description":"Artisan
+        single-origin coffee Cosby Sweater VHS craft beer sartorial party Pitchfork.
+        Butcher brunch hoodie sustainable next level vinyl art iPhone. Wes anderson
+        Cosby Sweater keffiyeh trust fund leggings blog squid American Apparel Brooklyn.
+        Irony ethical moon Banksy raw denim skateboard vegan tumblr mixtape.\nEcho
+        park retro Brooklyn Marfa 8-bit. Squid high life tumblr lomo stumptown helvetica.
+        Fixie banh mi mlkshk Brooklyn twee farm-to-table master cleanse. Austin helvetica
+        dreamcatcher readymade vegan letterpress Wayfarers messenger bag mixtape.","submitter_id":2,"state":"proposition","category":"crime","cached_votes_score":0,"tags":["priority","discussion","rfc"],"updated_at":"2014-10-01T16:17:48.738Z","created_at":"2014-10-01T16:17:48.738Z"},"sort":[0]}]},"facets":{"category":{"_type":"terms","missing":0,"total":2,"other":0,"terms":[{"term":"crime","count":1},{"term":"business","count":1}]},"state":{"_type":"terms","missing":0,"total":2,"other":0,"terms":[{"term":"proposition","count":2}]}}}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:49 GMT
+- request:
+    method: get
+    uri: http://localhost:9200/test_policies/policy/_search
+    body:
+      encoding: UTF-8
+      string: '{"facets":{"category":{"terms":{"field":"category"}},"state":{"terms":{"field":"state"}}},"sort":[{"cached_votes_score":"desc"}]}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2099'
+    body:
+      encoding: UTF-8
+      string: '{"took":1,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":2,"max_score":null,"hits":[{"_index":"test_policies","_type":"policy","_id":"1","_score":null,
+        "_source" : {"title":"evolve front-end deliverables","description":"Before
+        they sold out mixtape vegan American Apparel next level skateboard. Sartorial
+        locavore moon keytar chambray Portland lo-fi fap. High life cliche master
+        cleanse food truck PBR twee.\nPut a bird on it jean shorts locavore next level
+        thundercats letterpress skateboard cardigan vice. Scenester Portland thundercats
+        sustainable before they sold out you probably haven''t heard of them. Leggings
+        viral Wes Anderson whatever squid put a bird on it gluten-free biodiesel.","submitter_id":1,"state":"proposition","category":"business","cached_votes_score":0,"tags":["discussion","trivial","priority"],"updated_at":"2014-10-01T16:17:48.596Z","created_at":"2014-10-01T16:17:48.596Z"},"sort":[0]},{"_index":"test_policies","_type":"policy","_id":"2","_score":null,
+        "_source" : {"title":"repurpose cross-platform solutions","description":"Artisan
+        single-origin coffee Cosby Sweater VHS craft beer sartorial party Pitchfork.
+        Butcher brunch hoodie sustainable next level vinyl art iPhone. Wes anderson
+        Cosby Sweater keffiyeh trust fund leggings blog squid American Apparel Brooklyn.
+        Irony ethical moon Banksy raw denim skateboard vegan tumblr mixtape.\nEcho
+        park retro Brooklyn Marfa 8-bit. Squid high life tumblr lomo stumptown helvetica.
+        Fixie banh mi mlkshk Brooklyn twee farm-to-table master cleanse. Austin helvetica
+        dreamcatcher readymade vegan letterpress Wayfarers messenger bag mixtape.","submitter_id":2,"state":"proposition","category":"crime","cached_votes_score":0,"tags":["priority","discussion","rfc"],"updated_at":"2014-10-01T16:17:48.738Z","created_at":"2014-10-01T16:17:48.738Z"},"sort":[0]}]},"facets":{"category":{"_type":"terms","missing":0,"total":2,"other":0,"terms":[{"term":"crime","count":1},{"term":"business","count":1}]},"state":{"_type":"terms","missing":0,"total":2,"other":0,"terms":[{"term":"proposition","count":2}]}}}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:49 GMT
+recorded_with: VCR 2.9.2

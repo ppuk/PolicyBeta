@@ -1,0 +1,709 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:53 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"username":"username_843","email":"user_128@example.com","updated_at":"2014-10-01T16:17:53.467Z","created_at":"2014-10-01T16:17:53.467Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":7,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"1","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:53 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:53 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"title":"engineer sexy ROI","description":"Mcsweeney's Wes Anderson skateboard vinyl PBR sartorial craft beer tattooed. Beard art American Apparel ethical thundercats Pitchfork. Vhs Portland McSweeney's Wes Anderson retro biodiesel lomo gluten-free. Moon helvetica bicycle rights single-origin coffee food truck leggings scenester.","submitter_id":1,"state":"suggestion","category":"finance","cached_votes_score":0,"tags":["rfc","trivial","priority"],"updated_at":"2014-10-01T16:17:53.598Z","created_at":"2014-10-01T16:17:53.598Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '125'
+    body:
+      encoding: UTF-8
+      string: '{"took":8,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"1","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:53 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:53 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"priority"}
+        {"index":{"_id":2}}
+        {"name":"trivial"}
+        {"index":{"_id":3}}
+        {"name":"rfc"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '285'
+    body:
+      encoding: UTF-8
+      string: '{"took":40,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":1,"status":201}},{"index":{"_index":"test_tags","_type":"tag","_id":"2","_version":1,"status":201}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:53 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:53 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":2}}
+        {"username":"username_844","email":"admin_112@example.com","updated_at":"2014-10-01T16:17:53.768Z","created_at":"2014-10-01T16:17:53.768Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":7,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"2","_version":1,"status":201}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:53 GMT
+- request:
+    method: get
+    uri: http://localhost:9200/test_policies/policy/_search
+    body:
+      encoding: UTF-8
+      string: '{"facets":{"category":{"terms":{"field":"category"}},"state":{"terms":{"field":"state"}}},"sort":[{"cached_votes_score":"desc"}]}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '957'
+    body:
+      encoding: UTF-8
+      string: '{"took":3,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":1,"max_score":null,"hits":[{"_index":"test_policies","_type":"policy","_id":"1","_score":null,
+        "_source" : {"title":"engineer sexy ROI","description":"Mcsweeney''s Wes Anderson
+        skateboard vinyl PBR sartorial craft beer tattooed. Beard art American Apparel
+        ethical thundercats Pitchfork. Vhs Portland McSweeney''s Wes Anderson retro
+        biodiesel lomo gluten-free. Moon helvetica bicycle rights single-origin coffee
+        food truck leggings scenester.","submitter_id":1,"state":"suggestion","category":"finance","cached_votes_score":0,"tags":["rfc","trivial","priority"],"updated_at":"2014-10-01T16:17:53.598Z","created_at":"2014-10-01T16:17:53.598Z"},"sort":[0]}]},"facets":{"category":{"_type":"terms","missing":0,"total":1,"other":0,"terms":[{"term":"finance","count":1}]},"state":{"_type":"terms","missing":0,"total":1,"other":0,"terms":[{"term":"suggestion","count":1}]}}}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:53 GMT
+- request:
+    method: get
+    uri: http://localhost:9200/test_policies/policy/_search
+    body:
+      encoding: UTF-8
+      string: '{"facets":{"category":{"terms":{"field":"category"}},"state":{"terms":{"field":"state"}}},"sort":[{"cached_votes_score":"desc"}]}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '957'
+    body:
+      encoding: UTF-8
+      string: '{"took":1,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":1,"max_score":null,"hits":[{"_index":"test_policies","_type":"policy","_id":"1","_score":null,
+        "_source" : {"title":"engineer sexy ROI","description":"Mcsweeney''s Wes Anderson
+        skateboard vinyl PBR sartorial craft beer tattooed. Beard art American Apparel
+        ethical thundercats Pitchfork. Vhs Portland McSweeney''s Wes Anderson retro
+        biodiesel lomo gluten-free. Moon helvetica bicycle rights single-origin coffee
+        food truck leggings scenester.","submitter_id":1,"state":"suggestion","category":"finance","cached_votes_score":0,"tags":["rfc","trivial","priority"],"updated_at":"2014-10-01T16:17:53.598Z","created_at":"2014-10-01T16:17:53.598Z"},"sort":[0]}]},"facets":{"category":{"_type":"terms","missing":0,"total":1,"other":0,"terms":[{"term":"finance","count":1}]},"state":{"_type":"terms","missing":0,"total":1,"other":0,"terms":[{"term":"suggestion","count":1}]}}}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:53 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"title":"engineer sexy ROI","description":"Mcsweeney's Wes Anderson skateboard vinyl PBR sartorial craft beer tattooed. Beard art American Apparel ethical thundercats Pitchfork. Vhs Portland McSweeney's Wes Anderson retro biodiesel lomo gluten-free. Moon helvetica bicycle rights single-origin coffee food truck leggings scenester.","submitter_id":1,"state":"suggestion","category":"finance","cached_votes_score":0,"tags":["rfc","trivial","priority"],"updated_at":"2014-10-01T16:17:54.022Z","created_at":"2014-10-01T16:17:53.598Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '125'
+    body:
+      encoding: UTF-8
+      string: '{"took":8,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"1","_version":2,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"priority"}
+        {"index":{"_id":2}}
+        {"name":"trivial"}
+        {"index":{"_id":3}}
+        {"name":"rfc"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '285'
+    body:
+      encoding: UTF-8
+      string: '{"took":18,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":2,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"2","_version":2,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":2,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_users/user/_bulk?refresh=true&type=user
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":2}}
+        {"username":"username_844","email":"admin_112@example.com","updated_at":"2014-10-01T16:17:54.252Z","created_at":"2014-10-01T16:17:53.768Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"took":8,"errors":false,"items":[{"index":{"_index":"test_users","_type":"user","_id":"2","_version":2,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: get
+    uri: http://localhost:9200/test_policies/policy/_search
+    body:
+      encoding: UTF-8
+      string: '{"facets":{"category":{"terms":{"field":"category"}},"state":{"terms":{"field":"state"}}},"sort":[{"cached_votes_score":"desc"}]}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '957'
+    body:
+      encoding: UTF-8
+      string: '{"took":1,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":1,"max_score":null,"hits":[{"_index":"test_policies","_type":"policy","_id":"1","_score":null,
+        "_source" : {"title":"engineer sexy ROI","description":"Mcsweeney''s Wes Anderson
+        skateboard vinyl PBR sartorial craft beer tattooed. Beard art American Apparel
+        ethical thundercats Pitchfork. Vhs Portland McSweeney''s Wes Anderson retro
+        biodiesel lomo gluten-free. Moon helvetica bicycle rights single-origin coffee
+        food truck leggings scenester.","submitter_id":1,"state":"suggestion","category":"finance","cached_votes_score":0,"tags":["rfc","trivial","priority"],"updated_at":"2014-10-01T16:17:54.022Z","created_at":"2014-10-01T16:17:53.598Z"},"sort":[0]}]},"facets":{"category":{"_type":"terms","missing":0,"total":1,"other":0,"terms":[{"term":"finance","count":1}]},"state":{"_type":"terms","missing":0,"total":1,"other":0,"terms":[{"term":"suggestion","count":1}]}}}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"title":"engineer sexy ROI","description":"Mcsweeney's Wes Anderson skateboard vinyl PBR sartorial craft beer tattooed. Beard art American Apparel ethical thundercats Pitchfork. Vhs Portland McSweeney's Wes Anderson retro biodiesel lomo gluten-free. Moon helvetica bicycle rights single-origin coffee food truck leggings scenester.","submitter_id":1,"state":"proposition","category":"finance","cached_votes_score":0,"tags":["rfc","trivial","priority"],"updated_at":"2014-10-01T16:17:54.465Z","created_at":"2014-10-01T16:17:53.598Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '125'
+    body:
+      encoding: UTF-8
+      string: '{"took":7,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"1","_version":3,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"priority"}
+        {"index":{"_id":2}}
+        {"name":"trivial"}
+        {"index":{"_id":3}}
+        {"name":"rfc"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '286'
+    body:
+      encoding: UTF-8
+      string: '{"took":258,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":3,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"2","_version":3,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":3,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_policies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_policies/policy/_bulk?refresh=true&type=policy
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"title":"engineer sexy ROI","description":"Mcsweeney's Wes Anderson skateboard vinyl PBR sartorial craft beer tattooed. Beard art American Apparel ethical thundercats Pitchfork. Vhs Portland McSweeney's Wes Anderson retro biodiesel lomo gluten-free. Moon helvetica bicycle rights single-origin coffee food truck leggings scenester.","submitter_id":1,"state":"proposition","category":"finance","cached_votes_score":0,"tags":["rfc","trivial","priority"],"updated_at":"2014-10-01T16:17:54.967Z","created_at":"2014-10-01T16:17:53.598Z"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '125'
+    body:
+      encoding: UTF-8
+      string: '{"took":6,"errors":false,"items":[{"index":{"_index":"test_policies","_type":"policy","_id":"1","_version":4,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: head
+    uri: http://localhost:9200/test_tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:54 GMT
+- request:
+    method: post
+    uri: http://localhost:9200/test_tags/tag/_bulk?refresh=true&type=tag
+    body:
+      encoding: UTF-8
+      string: |
+        {"index":{"_id":1}}
+        {"name":"priority"}
+        {"index":{"_id":2}}
+        {"name":"trivial"}
+        {"index":{"_id":3}}
+        {"name":"rfc"}
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '285'
+    body:
+      encoding: UTF-8
+      string: '{"took":56,"errors":false,"items":[{"index":{"_index":"test_tags","_type":"tag","_id":"1","_version":4,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"2","_version":4,"status":200}},{"index":{"_index":"test_tags","_type":"tag","_id":"3","_version":4,"status":200}}]}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 16:17:55 GMT
+recorded_with: VCR 2.9.2

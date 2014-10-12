@@ -1,0 +1,4 @@
+%h2
+  = t('.title', id: user.id, name: user.logged_in_display_name)
+
+= render partial: 'form', locals: { submit_text: t('.submit') }

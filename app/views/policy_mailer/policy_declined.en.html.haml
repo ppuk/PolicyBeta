@@ -1,0 +1,9 @@
+%p
+  Hi, #{@to.username}
+
+%p
+  Your policy "#{@policy.title}" has been rejected.
+
+%p
+  = link_to 'View policy', policy_url(@policy)
+

@@ -1,0 +1,8 @@
+en:
+  confirmations:
+    email_confirmed:
+      title: Email Confirmed
+      description: Thankyou!
+    email_not_confirmed:
+      title: Email Not Confirmed
+      description: There was a problem with the link you clicked
