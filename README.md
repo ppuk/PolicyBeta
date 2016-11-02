@@ -1,6 +1,6 @@
 # PolicyBeta
 
-![Codeship](https://www.codeship.io/projects/37258430-8782-0131-28be-1e0fe2cd9bcf/status)
+This project is/was an attempt at creating a crowdsourcing platform for evidence-based policy development. It is currently semi-abandoned.
 
 ## External services
 
