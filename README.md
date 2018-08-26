@@ -1,6 +1,9 @@
 # PolicyBeta
 
-This project is/was an attempt at creating a crowdsourcing platform for evidence-based policy development. It is currently semi-abandoned.
+This project is/was an attempt at creating a crowdsourcing platform for evidence-based policy development. 
+
+## Status
+This project is currently **unmaintained**. Please note that if you wish to use this project, that some dependencies should be updated for security vulnerabilities.
 
 ## External services
 
