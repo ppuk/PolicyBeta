@@ -381,7 +381,7 @@ GEM
     spring (1.1.3)
     spring-commands-rspec (1.0.2)
       spring (>= 0.9.1)
-    sprockets (2.11.5)
+    sprockets (2.12.5)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -394,7 +394,7 @@ GEM
     sprockets-rails (2.1.3)
       actionpack (>= 4.2.5.1)
       activesupport (>= 4.1.11)
-      sprockets (~> 2.8)
+      sprockets (~> 2.12.5)
     sshkit (1.5.1)
       colorize
       net-scp (>= 1.1.2)
