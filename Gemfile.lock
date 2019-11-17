@@ -199,7 +199,7 @@ GEM
     guard-spring (0.0.4)
       guard
       spring
-    haml (4.0.5)
+    haml (5.0.0)
       tilt
     haml-rails (0.5.3)
       actionpack (>= 4.2.5.1)
